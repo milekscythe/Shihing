@@ -16,4 +16,6 @@ Shi'hing school of Kung Fu Official App.
 Michael Hoban
 </author>
 
+<gap:splash src="splash.png" />
+
 </widget>
