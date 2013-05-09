@@ -3,6 +3,92 @@
 <head>
 <title>Shi'hing School of Kung Fu</title>
 
+<style type="text/css"  media="all">
+
+/* begin styles for RSS Feed */
+
+.rss-box {
+	 margin: 1em;
+	 width: 160px;
+	 background-color: #333333;
+	 border: 1px solid #000000;
+	 
+}
+.rss-items {
+	margin-top:0px;
+	padding:0.5em; 0.5em;
+	margin-left:0px;
+	color:#000000;
+}
+p.rss-title {padding:0.5em;}
+.rss-title {
+	font-size: 8pt;
+	background-color: #000000;
+	color: #f76b08;
+	font-weight:bold;
+	text-align: center;
+}
+
+.rss-item  {
+  color:#DFDFDF;
+  font-size: 7pt;
+  list-style:none;
+  padding-bottom:1em;
+}
+
+.rss-item a {
+	color:#f67b08;
+	font-size: 8pt;
+	font-weight:bold;
+	}
+	
+.rss-item a:visited {
+	color: #f67b08;
+}
+
+.rss-item a:hover {
+	color: #00FFFF;
+}
+
+
+.rss-date {
+	font-size: 7pt;
+	color: #f76b08;
+	} 
+/* buttons modeled from http://www.wellstyled.com/css-inline-buttons.html */
+
+.pod-play {
+   _width:12em;
+   margin: 0 0.2em; padding: 0.1em 0; _padding:0;
+   
+   white-space:nowrap;
+   text-decoration: none;
+   vertical-align:middle;
+   background: #fb6;
+   color: black;
+   }
+.pod-play em {
+   _width:1em; _cursor:hand;
+   font-style: normal;
+   margin:0; padding: 0.1em 0.5em;
+   background: white;
+   color: #222;
+   }
+.pod-play span {
+   _width:1em; _cursor:hand;
+   margin:0; padding: 0.1em 0.5em 0.1em 0.3em;
+   }
+.pod-play:hover {
+   background: #666;
+   color: white;
+   }
+.pod-play:hover em {
+   background: black;
+   color: white
+   }
+
+</style>
+
 <meta charset="utf-8">
 <meta name="description" content="This is the official app developed for the Shihing School of Kung Fu by Scythe Apps" />
 <link href="jquery-mobile/jquery.mobile-1.0a3.min.css" rel="stylesheet" type="text/css"/>
@@ -36,7 +122,13 @@
 			<li><a href="#page4">Interested?</a></li>
           <li><a href="#page5">Contact</a></li>
     </ul>
-		<p align="center">&nbsp;</p>		
+		<p align="center">News Feed</p>
+		<p align="center">
+		  <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fshihingkungfu.co.uk%2F%3Ffeed%3Drss2&chan=y&num=3&tz=-5&utf=y&html=a"  charset="UTF-8" type="text/javascript"></script>
+          <noscript>
+          <a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fshihingkungfu.co.uk%2F%3Ffeed%3Drss2&chan=y&num=3&tz=-5&utf=y&html=y">RSS</a>
+          </noscript>
+		</p>		
   </div>
 	<div data-role="footer">
 		<h4>&copy;2013 &bull; Shi'hing School of Kung Fu</h4>

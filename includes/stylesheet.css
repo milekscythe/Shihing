@@ -19,6 +19,7 @@ body { margin: 0; padding: 0; font-size: 14px; }
 	background: #000 url(../images/banner_main.jpg) no-repeat 50% 0px;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 14px;
+	color: #FFF;
 }
 #page .heading { display: none; }
 #page .logo { width: 150px; height: 90px; margin: 0px auto 0px auto; background: url(../images/logo.png) no-repeat center 0px; }
