@@ -16,6 +16,90 @@
 (function( window, undefined ) {
 
 // Define a local copy of jQuery
+
+function ajaxLoader (el, options) {
+
+    // Becomes this.options
+
+    var defaults = {
+        bgColor         : '#fff',
+        duration        : 800,
+        opacity         : 0.7,
+        classOveride    : false
+    }
+    this.options    = jQuery.extend(defaults, options);
+    this.container  = $(el);
+    this.init = function() {
+        var container = this.container;
+        // Delete any other loaders
+        this.remove();
+        // Create the overlay
+        var overlay = $('<div></div>
+').css({
+                'background-color': this.options.bgColor,
+                'opacity':this.options.opacity,
+21
+                'width':container.width(),
+22
+                'height':container.height(),
+23
+                'position':'absolute',
+24
+                'top':'0px',
+25
+                'left':'0px',
+26
+                'z-index':99999
+27
+        }).addClass('ajax_overlay');
+28
+        // add an overiding class name to set new loader style
+29
+        if (this.options.classOveride) {
+30
+            overlay.addClass(this.options.classOveride);
+31
+        }
+32
+        // insert overlay and loader into DOM
+33
+        container.append(
+34
+            overlay.append(
+35
+                $('
+36
+<div></div>
+37
+').addClass('ajax_loader')
+38
+            ).fadeIn(this.options.duration)
+39
+        );
+40
+    };
+41
+    this.remove = function(){
+42
+        var overlay = this.container.children(".ajax_overlay");
+43
+        if (overlay.length) {
+44
+            overlay.fadeOut(this.options.classOveride, function() {
+45
+                overlay.remove();
+46
+            });
+47
+        }
+48
+    }
+49
+    this.init();
+50
+}
+
+
 var jQuery = function( selector, context ) {
 		// The jQuery object is actually just the init constructor 'enhanced'
 		return new jQuery.fn.init( selector, context );
