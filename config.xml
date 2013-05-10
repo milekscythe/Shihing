@@ -7,6 +7,7 @@
 <icon src="icon.png" />    
 <feature name="http://api.phonegap.com/1.0/geolocation"/>
 <preference name="show-splash-screen-spinner" value="true" />
+<preference name="splash-screen-duration" value="15000" />
 
 <name>Shi'hing Kung Fu</name>
 
@@ -15,7 +16,7 @@ Shi'hing school of Kung Fu Official App.
 </description>
 
 <author href="https://shihingkungfu.co.uk" email="michael@shihingkungfu.co.uk">
-Michael Hoban
+Scythe Apps
 </author>
 
 
