@@ -5,6 +5,8 @@
         versionCode="10" 
         version   = "1.7.3">
 <icon src="icon.png" />    
+<feature name="http://api.phonegap.com/1.0/geolocation"/>
+<preference name="show-splash-screen-spinner" value="false" />
 
 <name>Shi'hing Kung Fu</name>
 
@@ -16,6 +18,8 @@ Shi'hing school of Kung Fu Official App.
 Michael Hoban
 </author>
 
+
 <gap:splash src="splash.png" />
 <preference name="orientation" value="portrait" />
+
 </widget>
