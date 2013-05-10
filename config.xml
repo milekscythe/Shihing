@@ -6,7 +6,7 @@
         version   = "1.7.3">
 <icon src="icon.png" />    
 <feature name="http://api.phonegap.com/1.0/geolocation"/>
-<preference name="show-splash-screen-spinner" value="false" />
+<preference name="show-splash-screen-spinner" value="true" />
 
 <name>Shi'hing Kung Fu</name>
 
