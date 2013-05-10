@@ -18,4 +18,10 @@ Michael Hoban
 
 <gap:splash src="splash.png" />
 
+<preference name="orientation" value="landscape" />
+
+<preference name="show-splash-screen-spinner" value="true">
+
+<icon src="icon.png" />
+
 </widget>
